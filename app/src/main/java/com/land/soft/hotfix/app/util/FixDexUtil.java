@@ -89,6 +89,12 @@ public class FixDexUtil {
         return canFix;
     }
 
+    /**
+     * 合并dex
+     *
+     * @param appContext
+     * @param loadedDex
+     */
     private static void doDexInject(Context appContext, HashSet<File> loadedDex) {
         String optimizeDir = appContext.getFilesDir().getAbsolutePath() +
                 File.separator + OPTIMIZE_DEX_DIR;
